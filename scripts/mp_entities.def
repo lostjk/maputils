@@ -1,3 +1,19 @@
+//=============================================================================
+// Q3MAP2 ENTITIES
+//=============================================================================
+
+/*QUAKED _decal (0 1.0 0) ?
+-------- KEYS --------
+target : The name of the entity targeted for projection.
+-------- SPAWNFLAGS --------
+(none)
+-------- NOTES --------
+Compiler-only entity that specifies a decal to be projected. Should contain 1 or more patch meshes (curves) and target an info_null entity. Patch mesh should be using a shader with "polygonoffset" (or other blending methods) or z-fighting will occur. The distance between the center of the _decal entity and the target is the axis and distance of projection.
+*/
+
+//=============================================================================
+
+
 /*QUAKED item_***** ( 0 0 0 ) (-16 -16 -16) (16 16 16) suspended
 DO NOT USE THIS CLASS, IT JUST HOLDS GENERAL INFORMATION.
 The suspended flag will allow items to hang in the air, otherwise they are dropped to the next surface.
@@ -544,7 +560,7 @@ Fires at either the target or the current direction.
 
 
 /*QUAKED misc_ammo_floor_unit (1 0 0) (-16 -16 0) (16 16 40)
-model="/models/items/a_pwr_converter.md3"
+model="models/items/a_pwr_converter.md3"
 Gives generic ammo when used
 
 "count" - max charge value (default 200)
@@ -554,7 +570,7 @@ Gives generic ammo when used
 
 
 /*QUAKED misc_shield_floor_unit (1 0 0) (-16 -16 0) (16 16 40)
-model="/models/items/a_shield_converter.md3"
+model="models/items/a_shield_converter.md3"
 Gives shield energy when used.
 
 "count" - max charge value (default 50)
