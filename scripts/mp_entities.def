@@ -410,15 +410,6 @@ The model I used for this entity would be a good reference to scale your maps to
 Available entities added:
 _Decal
 
-Mod Specific entities added:
-trigger_scoreboard  (Hydroball)
-trigger_playarea    (Hydroball)
-trigger_goal        (Hydroball)
-trigger_teamchoice  (Hydroball)
-trigger_weaponstrip (Hydroball)
-info_start_position (Hydroball)
-info_ball_spawn     (Hydroball)
-
 Hope this helps!
 
 Happy mapping!
@@ -8703,68 +8694,6 @@ Compiler-only entity that specifies a decal to be projected. The distance betwee
 Note to user: the surface of the info_null that would first be hit should be the closest to the surface to prject on. In other words put the info_null in the wall or geometry. 
 */
 
-
-/*QUAKED info_ball_spawn (.3 .3 1) (-8 -8 -0) (8 8 16)
-===========DESCRIPTION============================
-Where the ball spawns each time.
-Hydroball specific entity.
-===========KEYS&VALUES============================
-Targets will be fired when someone spawns in on them.
-*/
-
-
-/*QUAKED info_start_position (1 0 0) (-16 -16 -24) (16 16 32)
-===========DESCRIPTION============================
-Points in the arena for players to swim to during match countdown.
-Hydroball specific entity.
-===========KEYS&VALUES============================
-'plteam' - can be 1 or 2. 1 is team 1 (red), 2 is team 2 (blue).
-*/
-
-
-/*QUAKED trigger_weaponstrip (.1 .5 .1) ?
-===========DESCRIPTION============================
-Strips weapons/gives weapons to player when he is entering/leaving the arena.
-Hydroball specific entity.
-===========KEYS&VALUES============================
-'giveback' - Can be 0 or 1. If 0, players will be stripped to their fists upon touching this. If 1, their weapons will be given back upon touching this (if they are in a stripped state).
-*/
-
-
-/*QUAKED trigger_teamchoice (.1 .5 .1) ?
-===========DESCRIPTION============================
-Acts as the entry gate for the given team.
-Hydroball specific entity.
-===========KEYS&VALUES============================
-'team' - can be 1 or 2. 1 is team 1 (red), 2 is team 2 (blue).
-*/
-
-
-/*QUAKED trigger_goal (.1 .5 .1) ?
-===========DESCRIPTION============================
-Acts as the goal for the given team. When the ball enters this trigger, the opposing team will be awarded a point.
-Hydroball specific entity.
-===========KEYS&VALUES============================
-'team' - can be 1 or 2. 1 is team 1 (red), 2 is team 2 (blue).
-*/
-
-
-/*QUAKED trigger_playarea (.1 .5 .1) ?
-===========DESCRIPTION============================
-This trigger should be stretched across the entire play area. It monitors players inside in order to decide what to do for match status.
-Hydroball specific entity.
-*/
-
-/*QUAKED trigger_scoreboard (.1 .5 .1) ?
-===========DESCRIPTION============================
-Displays the given team's score on an actual texture rendered in real-time.
-The alt_normal key allows you to use an alternate direction. Use it if only one number appears on the face to tell it to split the face for the other digit in a separate direction.
-Hydroball specific entity.
-===========KEYS&VALUES============================
-'team' - can be 1 or 2. 1 is team 1 (red), 2 is team 2 (blue).
-
-'alt_normal' - If non-0 will use alternate axis to split face.
-*/
 
 /*QUAKED _skybox (0.77 0.88 1.0) (-4 -4 -4) (4 4 4)
 -------- KEYS --------
